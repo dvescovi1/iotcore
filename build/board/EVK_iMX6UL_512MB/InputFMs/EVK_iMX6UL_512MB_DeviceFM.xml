@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FeatureManifest
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"
+    >
+
+  <BasePackages>
+     <PackageFile Path="%BSPPKG_DIR%" Name="NXP.EVK_iMX6UL_512MB.SystemInformation.cab"/>
+     <PackageFile Path="%BSPPKG_DIR%" Name="NXP.EVK_iMX6UL_512MB.BootLoader.cab"/>
+     <PackageFile Path="%BSPPKG_DIR%" Name="NXP.EVK_iMX6UL_512MB.BootFirmware.cab"/>
+     <PackageFile Path="%BSPPKG_DIR%" Name="NXP.iMX.imxusdhc.cab"/>
+     <PackageFile Path="%BSPPKG_DIR%" Name="SV.PlatExtensions.UpdateOS.cab"/>
+  </BasePackages>
+
+  <OEMDevicePlatformPackages>
+    <PackageFile Device="EVK_iMX6UL_512MB" Path="%BSPPKG_DIR%" Name="NXP.EVK_iMX6UL_512MB.OEMDevicePlatform.cab"/>
+    <PackageFile Device="EVK_iMX6UL_512MB_Min2GB" Path="%BSPPKG_DIR%" Name="NXP.EVK_iMX6UL_512MB.OEMDevicePlatform_Min2GB.cab"/>
+  </OEMDevicePlatformPackages>
+
+  <DeviceLayoutPackages>
+    <PackageFile SOC="NXP_IMX6" Path="%BSPPKG_DIR%" Name="NXP.EVK_iMX6UL_512MB.DeviceLayout.cab"/>
+    <PackageFile SOC="NXP_IMX6_Min2GB" Path="%BSPPKG_DIR%" Name="NXP.EVK_iMX6UL_512MB.DeviceLayout_Min2GB.cab"/>
+  </DeviceLayoutPackages>
+
+  <Features>
+    <Microsoft />
+    <MSFeatureGroups />
+    <OEM>
+    </OEM>
+    <OEMFeatureGroups />
+  </Features>
+</FeatureManifest>
