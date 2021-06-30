@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FeatureManifest
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"
+    >
+
+  <BasePackages>
+     <PackageFile Path="%BSPPKG_DIR%" Name="NXP.NXPEVK_iMX8M_4GB.SystemInformation.cab"/>
+     <PackageFile Path="%BSPPKG_DIR%" Name="NXP.NXPEVK_iMX8M_4GB.BootLoader.cab"/>
+     <PackageFile Path="%BSPPKG_DIR%" Name="NXP.NXPEVK_iMX8M_4GB.BootFirmware.cab"/>
+     <PackageFile Path="%BSPPKG_DIR%" Name="NXP.iMX.imxusdhc.cab"/>
+     <PackageFile Path="%BSPPKG_DIR%" Name="SV.PlatExtensions.UpdateOS.cab"/>
+  </BasePackages>
+
+  <OEMDevicePlatformPackages>
+    <PackageFile Device="NXPEVK_iMX8M_4GB" Path="%BSPPKG_DIR%" Name="NXP.NXPEVK_iMX8M_4GB.OEMDevicePlatform.cab"/>
+  </OEMDevicePlatformPackages>
+
+  <DeviceLayoutPackages>
+    <PackageFile SOC="NXP_IMX8M" Path="%BSPPKG_DIR%" Name="NXP.NXPEVK_iMX8M_4GB.DeviceLayout.cab"/>
+  </DeviceLayoutPackages>
+
+  <Features>
+    <Microsoft />
+    <MSFeatureGroups />
+    <OEM>
+      <PackageFile Path="%BSPPKG_DIR%" Name="IOT.Arm64.Crt.Runtime.cab">
+        <FeatureIDs>
+          <FeatureID>IOT_CRT140</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+	  <PackageFile Path="%BSPPKG_DIR%" Name="NXP.Appx.DefaultCoreArm64.cab">
+        <FeatureIDs>
+          <FeatureID>APPX_DEFAULTCOREARM64</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+    </OEM>
+    <OEMFeatureGroups />
+  </Features>
+</FeatureManifest>

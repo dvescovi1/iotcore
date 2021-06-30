@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Decoder-h265">
+      <UniqueIdentifier>{2e16c1fa-8f49-439a-b918-636ed487b8a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Decoder-vp9">
+      <UniqueIdentifier>{2cefebd9-6933-41ea-b0c7-2eef1ecba3d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Decoder-common">
+      <UniqueIdentifier>{e6e0f877-3de4-474c-8cdf-18611e6ad750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{298dbad2-d652-403e-89ef-ffed2099f343}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="openmax_il\source\OSAL.c" />
+    <ClCompile Include="decoder_sw\software\source\common\workaround.c">
+      <Filter>Decoder-common</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\common\tiledref.c">
+      <Filter>Decoder-common</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\common\stream_corrupt.c">
+      <Filter>Decoder-common</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\common\refbuffer.c">
+      <Filter>Decoder-common</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\common\input_queue.c">
+      <Filter>Decoder-common</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\common\fifo.c">
+      <Filter>Decoder-common</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\common\errorhandling.c">
+      <Filter>Decoder-common</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\common\commonconfig.c">
+      <Filter>Decoder-common</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_asic.c">
+      <Filter>Decoder-h265</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_byte_stream.c">
+      <Filter>Decoder-h265</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_decoder.c">
+      <Filter>Decoder-h265</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_dpb.c">
+      <Filter>Decoder-h265</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_exp_golomb.c">
+      <Filter>Decoder-h265</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_nal_unit.c">
+      <Filter>Decoder-h265</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_pic_order_cnt.c">
+      <Filter>Decoder-h265</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_pic_param_set.c">
+      <Filter>Decoder-h265</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_sei.c">
+      <Filter>Decoder-h265</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_seq_param_set.c">
+      <Filter>Decoder-h265</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_slice_header.c">
+      <Filter>Decoder-h265</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_storage.c">
+      <Filter>Decoder-h265</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_util.c">
+      <Filter>Decoder-h265</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_video_param_set.c">
+      <Filter>Decoder-h265</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_vui.c">
+      <Filter>Decoder-h265</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\hevc\hevcdecapi.c">
+      <Filter>Decoder-h265</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\common\sw_util.c">
+      <Filter>Decoder-common</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\common\raster_buffer_mgr.c">
+      <Filter>Decoder-common</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\common\regdrv.c">
+      <Filter>Decoder-common</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\common\sw_stream.c">
+      <Filter>Decoder-common</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_fb_mngr.c">
+      <Filter>Decoder-h265</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9_entropymode.c">
+      <Filter>Decoder-vp9</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9_entropymv.c">
+      <Filter>Decoder-vp9</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9_modecont.c">
+      <Filter>Decoder-vp9</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9_modecontext.c">
+      <Filter>Decoder-vp9</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9_treecoder.c">
+      <Filter>Decoder-vp9</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9decapi.c">
+      <Filter>Decoder-vp9</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9hwd_asic.c">
+      <Filter>Decoder-vp9</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9hwd_bool.c">
+      <Filter>Decoder-vp9</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9hwd_buffer_queue.c">
+      <Filter>Decoder-vp9</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9hwd_decoder.c">
+      <Filter>Decoder-vp9</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9hwd_headers.c">
+      <Filter>Decoder-vp9</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9hwd_output.c">
+      <Filter>Decoder-vp9</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9hwd_probs.c">
+      <Filter>Decoder-vp9</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="decoder_sw\software\source\common\sw_debug.h" />
+  </ItemGroup>
+</Project>

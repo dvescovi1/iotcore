@@ -1,0 +1,5 @@
+LIBRARY	"imxomxg2"
+EXPORTS
+    DllMain             PRIVATE
+    HantroHwDecOmx_decoder_create_vp9
+	HantroHwDecOmx_decoder_create_hevc

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{94AF57B0-FBFA-4F2C-896F-480D7CBEB79B}</ProjectGuid>
+    <TemplateGuid>{1bc93793-694f-48fe-9372-81e2b05556fd}</TemplateGuid>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <Configuration>Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">Win32</Platform>
+    <RootNamespace>imxvpuwrap</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="..\..\..\build\common.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup>
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+    <ApiValidator_Enable>false</ApiValidator_Enable>
+    <IncludePath>$(ProjectDir)\decoder_sw\software\linux\dwl;$(ProjectDir)\decoder_sw\software\windows\inc;$(ProjectDir)\decoder_sw\software\source\common;$(ProjectDir)\decoder_sw\software\source\hevc;$(ProjectDir)\decoder_sw\software\source\vp9;$(ProjectDir)\decoder_sw\software\source\h264high\legacy;$(ProjectDir)\decoder_sw\software\source\h264high;$(ProjectDir)\decoder_sw\software\linux\h264high;$(ProjectDir)\decoder_sw\software\source\config;$(ProjectDir)\..\imx-vpuwrap\hantro_dec;$(ProjectDir)\..\imxvpukm;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <!-- removed : DWL_USE_DEC_IRQ; DEC_X170_USING_IRQ=1 -->
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);SET_OUTPUT_CROP_RECT;USE_EXTERNAL_BUFFER;VSI_API;OMX_ENCODER_VIDEO_DOMAIN;WIN32;DEC_MODULE_PATH="/dev/mxc_hantro";USE_FAKE_RFC_TABLE;FIFO_DATATYPE=void*;DOWN_SCALER;USE_FAST_EC;USE_VP9_EC;GET_FREE_BUFFER_NON_BLOCK;DEC_X170_USING_IRQ=0;DEC_X170_OUTPUT_FORMAT=0;DEC_X170_TIMEOUT_LENGTH=-1;ENABLE_HEVC_SUPPORT;ENABLE_VP9_SUPPORT;USE_ION;DWL_DISABLE_REG_PRINTS;USE_64BIT_ENV;GET_OUTPUT_BUFFER_NON_BLOCK;HANTRODEC_STREAM_SWAP=15;USE_OUTPUT_RELEASE;USE_PICTURE_DISCARD;IS_G2_DECODER</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">%(PreprocessorDefinitions);_DWL_DEBUG;VP8DEC_TRACE;_SW_DEBUG_PRINT;_DEBUG_PRINT;_ERROR_PRINT;DEBUG;_ASSERT_USED;_RANGE_CHECK;_DEBUG</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">%(PreprocessorDefinitions);NDEBUG</PreprocessorDefinitions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4296;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">Disabled</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <FilesToPackage Include="$(TargetPath)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="decoder_sw\software\source\common\commonconfig.c" />
+    <ClCompile Include="decoder_sw\software\source\common\errorhandling.c" />
+    <ClCompile Include="decoder_sw\software\source\common\fifo.c" />
+    <ClCompile Include="decoder_sw\software\source\common\input_queue.c" />
+    <ClCompile Include="decoder_sw\software\source\common\raster_buffer_mgr.c" />
+    <ClCompile Include="decoder_sw\software\source\common\refbuffer.c" />
+    <ClCompile Include="decoder_sw\software\source\common\regdrv.c" />
+    <ClCompile Include="decoder_sw\software\source\common\stream_corrupt.c" />
+    <ClCompile Include="decoder_sw\software\source\common\sw_stream.c" />
+    <ClCompile Include="decoder_sw\software\source\common\sw_util.c" />
+    <ClCompile Include="decoder_sw\software\source\common\tiledref.c" />
+    <ClCompile Include="decoder_sw\software\source\common\workaround.c" />
+    <ClCompile Include="decoder_sw\software\source\hevc\hevcdecapi.c" />
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_asic.c" />
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_byte_stream.c" />
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_decoder.c" />
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_dpb.c" />
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_exp_golomb.c" />
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_fb_mngr.c" />
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_nal_unit.c" />
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_pic_order_cnt.c" />
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_pic_param_set.c" />
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_sei.c" />
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_seq_param_set.c" />
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_slice_header.c" />
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_storage.c" />
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_util.c" />
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_video_param_set.c" />
+    <ClCompile Include="decoder_sw\software\source\hevc\hevc_vui.c" />
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9decapi.c" />
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9hwd_asic.c" />
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9hwd_bool.c" />
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9hwd_buffer_queue.c" />
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9hwd_decoder.c" />
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9hwd_headers.c" />
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9hwd_output.c" />
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9hwd_probs.c" />
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9_entropymode.c" />
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9_entropymv.c" />
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9_modecont.c" />
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9_modecontext.c" />
+    <ClCompile Include="decoder_sw\software\source\vp9\vp9_treecoder.c" />
+    <!--    <ClCompile Include="openmax_il\source\decoder\codec_vp8.c" /> -->
+    <ClCompile Include="openmax_il\source\OSAL.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="decoder_sw\software\source\common\sw_debug.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

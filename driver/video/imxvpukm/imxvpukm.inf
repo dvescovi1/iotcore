@@ -1,0 +1,78 @@
+; Copyright (c) Microsoft Corporation. All rights reserved.
+; Licensed under the MIT License.
+;
+; Module Name:
+; imxvpukm.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%ManufacturerName%
+CatalogFile=imxvpukm.cat
+DriverVer= ; stampinf will fill in driver version
+
+[DestinationDirs]
+DefaultDestDir = 13
+
+; ================= Class section =====================
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+imxvpukm.sys  = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+%imxvpukm.DeviceDesc%=imx_vpu_km_Device, ACPI\NXP0109
+
+[imx_vpu_km_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+imxvpukm.sys
+
+;-------------- Service installation
+[imx_vpu_km_Device.NT.Services]
+AddService = imxvpukm,%SPSVCINST_ASSOCSERVICE%, imx_vpu_km_Service_Inst
+
+; -------------- imxvpukm driver install sections
+[imx_vpu_km_Service_Inst]
+DisplayName    = %imxvpukm.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\imxvpukm.sys
+
+; ------------- Interface installation
+[imx_vpu_km_Device.NT.Interfaces]
+AddInterface={ada9253b-628c-40ce-b2c1-19f489a0f3da},,imx_vpu_km_interface
+
+[imx_vpu_km_interface]
+AddProperty=imx_vpu_km_interface_AddProperty
+
+; Mark us as a privileged interface
+[imx_vpu_km_interface_AddProperty]
+{026e516e-b814-414b-83cd-856d6fef4822},6,0x11,,1
+
+[imx_vpu_km_Device.NT.Wdf]
+KmdfService =  imxvpukm, imx_vpu_km_wdfsect
+[imx_vpu_km_wdfsect]
+KmdfLibraryVersion = $KMDFVERSION$
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="IoT"
+DiskName = "i.MX VPU Device Installation Disk"
+imxvpukm.DeviceDesc = "i.MX VPU Device"
+imxvpukm.SVCDESC = "i.MX VPU Device Service"
+
+

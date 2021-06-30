@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="CAutoLock.cpp" />
+    <ClCompile Include="vpumft.cpp" />
+    <ClCompile Include="vpumft_DecodeTask.cpp" />
+    <ClCompile Include="vpumft_IMFAsyncCallback_Impl.cpp" />
+    <ClCompile Include="vpumft_IMFMediaEventGenerator_Impl.cpp" />
+    <ClCompile Include="vpumft_IMFShutdown_Impl.cpp" />
+    <ClCompile Include="vpumft_IMFTransform_Impl.cpp" />
+    <ClCompile Include="vpumft_IUnknown_Impl.cpp" />
+    <ClCompile Include="CSampleQueue.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="CVpuMediaBuffer.cpp" />
+    <ClCompile Include="vpumft_IMFQualityAdvise_Impl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CAutoLock.h" />
+    <ClInclude Include="vpumft.h" />
+    <ClInclude Include="vpumft_DecodeTask.h" />
+    <ClInclude Include="CSampleQueue.h" />
+    <ClInclude Include="ivpumft.h" />
+    <ClInclude Include="CVpuMediaBuffer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imxvpumft.def" />
+  </ItemGroup>
+</Project>

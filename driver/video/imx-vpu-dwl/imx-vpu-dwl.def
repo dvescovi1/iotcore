@@ -1,0 +1,53 @@
+LIBRARY	"imx-vpu-dwl"
+EXPORTS
+    DllMain             PRIVATE
+	
+	DWLInit
+	DWLRelease
+	DWLReadAsicID
+	DWLReadAsicConfig
+	DWLReadAsicCoreCount
+	DWLReadMCAsicConfig
+	DWLEnableHw
+	DWLDisableHw
+	DWLReserveHw
+	DWLReserveHwPipe
+	DWLReleaseHw
+	DWLWaitHwReady
+	DWLmemset
+	DWLmemcpy
+	DWLPrivateAreaMemcpy
+	DWLmalloc
+	DWLcalloc
+	DWLfree
+	DWLMallocRefFrm
+	DWLFreeRefFrm
+	DWLMallocLinear
+	DWLFreeLinear
+	DWLReadReg
+	DWLWriteReg
+	DWLPrivateAreaReadByte
+	DWLPrivateAreaMemset
+	DWLSetIRQCallback
+	DWLInvalidateLinear
+	DWLFlushLinear
+
+    sched_yield
+	usleep
+	getpagesize
+
+	sem_init
+	sem_post
+	sem_wait
+	sem_destroy
+	sem_getvalue
+
+	pthread_mutex_init
+	pthread_mutex_destroy
+	pthread_mutex_lock
+	pthread_mutex_unlock
+
+	pthread_cond_init
+	pthread_cond_destroy
+	pthread_cond_signal
+	pthread_cond_wait

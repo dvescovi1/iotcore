@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="OpenMax">
+      <UniqueIdentifier>{ea57667b-8834-4a2a-814b-05ade5d05334}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\imx-vpu-hantro\openmax_il\source\decoder\codec_h264.c">
+      <Filter>OpenMax</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="imxomxg1.cpp" />
+    <ClCompile Include="..\imx-vpu-hantro\openmax_il\source\decoder\codec_vp8.c">
+      <Filter>OpenMax</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\imx-vpu-hantro\openmax_il\source\decoder\codec_h264.h">
+      <Filter>OpenMax</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imx-vpu-hantro\openmax_il\source\decoder\codec_avs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imx-vpu-hantro\openmax_il\source\decoder\codec_jpeg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imx-vpu-hantro\openmax_il\source\decoder\codec_mpeg2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imx-vpu-hantro\openmax_il\source\decoder\codec_mpeg4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imx-vpu-hantro\openmax_il\source\decoder\codec_pp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imx-vpu-hantro\openmax_il\source\decoder\codec_rv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imx-vpu-hantro\openmax_il\source\decoder\codec_vc1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imx-vpu-hantro\openmax_il\source\decoder\codec_vp6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imx-vpu-hantro\openmax_il\source\decoder\codec_webp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imx-vpu-hantro\openmax_il\source\decoder\codec_vp8.h">
+      <Filter>OpenMax</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imxomxg1.def" />
+  </ItemGroup>
+</Project>

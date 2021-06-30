@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\common\commonconfig_g1.c">
+      <Filter>Decoder-common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\common\errorhandling.c">
+      <Filter>Decoder-common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\common\fifo.c">
+      <Filter>Decoder-common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\h264_pp_pipeline.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\h264decapi.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\h264decapi_e.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\h264decmcapi.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\h264hwd_asic.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\legacy\h264hwd_byte_stream.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\h264hwd_cabac.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\h264hwd_cavlc.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\h264hwd_conceal.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\h264hwd_decoder.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\h264hwd_dpb.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\h264hwd_dpb_lock.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\h264hwd_inter_prediction.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\h264hwd_intra_prediction.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\h264hwd_macroblock_layer.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\legacy\h264hwd_nal_unit.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\legacy\h264hwd_neighbour.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\legacy\h264hwd_pic_order_cnt.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\legacy\h264hwd_pic_param_set.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\legacy\h264hwd_sei.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\legacy\h264hwd_seq_param_set.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\h264hwd_slice_data.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\legacy\h264hwd_slice_group_map.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\legacy\h264hwd_slice_header.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\h264hwd_storage.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\legacy\h264hwd_stream.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\legacy\h264hwd_util.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\legacy\h264hwd_vlc.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\h264high\legacy\h264hwd_vui.c">
+      <Filter>Decoder-h264</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\common\workaround.c">
+      <Filter>Decoder-common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\common\tiledref.c">
+      <Filter>Decoder-common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\common\stream_corrupt.c">
+      <Filter>Decoder-common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\common\regdrv_g1.c">
+      <Filter>Decoder-common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\common\refbuffer.c">
+      <Filter>Decoder-common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\common\input_queue.c">
+      <Filter>Decoder-common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\openmax_il\source\OSAL.c" />
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\vp8\vp8decapi.c">
+      <Filter>Decoder-vp8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\vp8\vp8decmcapi.c">
+      <Filter>Decoder-vp8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\vp8\vp8hwd_asic.c">
+      <Filter>Decoder-vp8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\vp8\vp8hwd_bool.c">
+      <Filter>Decoder-vp8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\vp8\vp8hwd_buffer_queue.c">
+      <Filter>Decoder-vp8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\vp8\vp8hwd_decoder.c">
+      <Filter>Decoder-vp8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\vp8\vp8hwd_error.c">
+      <Filter>Decoder-vp8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\vp8\vp8hwd_headers.c">
+      <Filter>Decoder-vp8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\vp8\vp8hwd_pp_pipeline.c">
+      <Filter>Decoder-vp8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\decoder_sw\software\source\vp8\vp8hwd_probs.c">
+      <Filter>Decoder-vp8</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\imx-vpu-hantro\decoder_sw\software\source\common\sw_debug.h">
+      <Filter>Decoder-common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imx-vpu-hantro\decoder_sw\software\source\common\8170enum_g1.h">
+      <Filter>Decoder-common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imx-vpu-hantro\decoder_sw\software\source\common\8170table_g1.h">
+      <Filter>Decoder-common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imx-vpu-hantro\decoder_sw\software\source\common\regdrv_g1.h">
+      <Filter>Decoder-common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imx-vpu-hantro\decoder_sw\software\source\config\deccfg.h">
+      <Filter>Decoder-common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imx-vpu-hantro\decoder_sw\software\source\config\ppcfg.h">
+      <Filter>Decoder-common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Decoder-h264">
+      <UniqueIdentifier>{a1e7b0a4-01ad-49d2-a6a6-7b05454173a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{e2737549-c99b-4ee3-a50c-6cb926dc37a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Decoder-common">
+      <UniqueIdentifier>{027031f6-dd9f-4b2b-8b32-3632b2d2f766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Decoder-vp8">
+      <UniqueIdentifier>{507ca9be-831d-49ef-a177-87efc8820785}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="OpenMax">
+      <UniqueIdentifier>{7096ac23-af7b-4a77-86ba-9bd8837bd3c4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\imx-vpu-hantro\openmax_il\source\decoder\codec_hevc.c">
+      <Filter>OpenMax</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imx-vpu-hantro\openmax_il\source\decoder\codec_vp9.c">
+      <Filter>OpenMax</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imxvpuomx\dllmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\imx-vpu-hantro\openmax_il\source\decoder\codec_hevc.h">
+      <Filter>OpenMax</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imx-vpu-hantro\openmax_il\source\decoder\codec_vp9.h">
+      <Filter>OpenMax</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\imxvpuomx\imxomxg2.def" />
+  </ItemGroup>
+</Project>

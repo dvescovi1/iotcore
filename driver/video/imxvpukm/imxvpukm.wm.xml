@@ -1,0 +1,114 @@
+﻿<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<identity
+  xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  name="imxvpukm"
+  namespace="iMX"
+  owner="$(OEMNAME)"
+  legacyName="NXP.iMX.imxvpukm"
+  >
+  <files>
+    <file source="$(_RELEASEDIR)..\imxvpumft\imxvpumft.dll" destinationDir="$(runtime.system32)"/>
+    <file source="$(_RELEASEDIR)..\imxomxg1\imxomxg1.dll" destinationDir="$(runtime.system32)"/>
+    <file source="$(_RELEASEDIR)..\imxomxg2\imxomxg2.dll" destinationDir="$(runtime.system32)"/>
+    <file source="$(_RELEASEDIR)..\imx-vpu-dwl\imx-vpu-dwl.dll" destinationDir="$(runtime.system32)"/>
+  </files>
+  <COM>
+    <servers>
+      <inProcServer path="$(runtime.system32)\imxvpumft.dll">
+        <classes>
+          <classDefinition
+            id="{8A12D5A9-69EC-4FE2-BF16-7B4C857D0DC0}"
+            name="i.MX VPU MFT hardware accelerator"
+            threading="Both"
+            />
+        </classes>
+      </inProcServer>
+    </servers>
+  </COM>
+  <regKeys>
+    <regKey keyName="$(hklm.software)\Microsoft\Windows\CurrentVersion\DeviceAccess\Classes\{ADA9253V-628C-40CE-B2C1-19F489A0F3DA}">
+      <!-- Set interface policy to unrestricted.  Don't require {ADA9253V-628C-40CE-B2C1-19F489A0F3DA} capability in client process appx manifest for apps using VPU decoding-->
+      <regValue
+          name="Policy"
+          type="REG_DWORD"
+          value="1"
+      />
+    </regKey>
+    <regKey keyName="$(hklm.software)\Classes\MediaFoundation\Transforms\8A12D5A9-69EC-4FE2-BF16-7B4C857D0DC0">
+      <!-- register vpu Media Foundation Transform -->
+      <regValue
+          type="REG_SZ"
+          value="i.MX VPU MFT hardware accelerator"
+      />
+      <!-- h264, h265, hevc, vp80 and vp90 as InputTypes and nv12 as OutputTypes -->
+      <regValue
+          name="InputTypes"
+          type="REG_BINARY"
+          value="7669647300001000800000aa00389b714832363400001000800000aa00389b717669647300001000800000aa00389b714832363500001000800000aa00389b717669647300001000800000aa00389b714845564300001000800000aa00389b717669647300001000800000aa00389b715650383000001000800000aa00389b717669647300001000800000aa00389b715650393000001000800000aa00389b71"
+      />
+      <regValue
+          name="OutputTypes"
+          type="REG_BINARY"
+          value="7669647300001000800000aa00389b714e56313200001000800000aa00389b71"
+      />
+      <regValue
+          name="MFTFlags"
+          type="REG_DWORD"
+          value="2" 
+      />
+    </regKey>
+    <regKey keyName="$(hklm.software)\Classes\MediaFoundation\Transforms\Categories\d6c02d4b-6833-45b4-971a-05a4b04bab91\8A12D5A9-69EC-4FE2-BF16-7B4C857D0DC0">
+      <!-- add vpu MFT guid to MFT_CATEGORY_VIDEO_DECODER -->
+      <regValue type="REG_SZ"/>
+    </regKey>
+    <regKey keyName="$(hklm.software)\Classes\MediaFoundation\Transforms\Preferred">
+      <!-- H264 -->
+      <!-- can't set this value, get a registry value collision during package generation
+      <regValue
+          name="{34363248-0000-0010-8000-00AA00389B71}"
+          type="REG_SZ"
+          value="{8A12D5A9-69EC-4FE2-BF16-7B4C857D0DC0}"
+      />
+      -->
+      <!-- H265 -->
+      <regValue
+          name="{35363248-0000-0010-8000-00AA00389B71}" 
+          type="REG_SZ"
+          value="{8A12D5A9-69EC-4FE2-BF16-7B4C857D0DC0}"
+      />
+      <!-- HEVC -->
+      <regValue
+          name="{43564548-0000-0010-8000-00AA00389B71}"
+          type="REG_SZ"
+          value="{8A12D5A9-69EC-4FE2-BF16-7B4C857D0DC0}"
+          />
+      <!-- VP8 -->
+      <regValue
+          name="{30385056-0000-0010-8000-00AA00389B71}"
+          type="REG_SZ"
+          value="{8A12D5A9-69EC-4FE2-BF16-7B4C857D0DC0}"
+          />
+      <!-- VP9 -->
+      <regValue
+          name="{30395056-0000-0010-8000-00AA00389B71}"
+          type="REG_SZ"
+          value="{8A12D5A9-69EC-4FE2-BF16-7B4C857D0DC0}"
+          />
+    </regKey>
+    <!-- temporary - disable in-box H264 codec by setting ENUM_FIELD_OF_USE flag-->
+    <regKey keyName="$(hklm.software)\Classes\MediaFoundation\Transforms\62ce7e72-4c71-4d20-b15d-452831a87d9d">
+      <regValue
+          name="MFTFLAGS"
+          type="REG_DWORD"
+          value="00000008"
+          />
+    </regKey>
+  </regKeys>
+  <drivers>
+    <driver>
+      <inf source="$(_RELEASEDIR)imxvpukm.inf"/>
+    </driver>
+  </drivers>
+</identity>

@@ -1,0 +1,12 @@
+LIBRARY	"imxomxg1"
+EXPORTS
+    DllMain             PRIVATE
+    HantroHwDecOmx_decoder_create_h264
+	HantroHwDecOmx_decoder_create_jpeg
+	HantroHwDecOmx_decoder_create_mpeg4
+	HantroHwDecOmx_decoder_create_vc1
+	HantroHwDecOmx_decoder_create_mpeg2
+	HantroHwDecOmx_decoder_create_vp6
+	HantroHwDecOmx_decoder_create_avs
+	HantroHwDecOmx_decoder_create_vp8
+	HantroHwDecOmx_decoder_create_webp
