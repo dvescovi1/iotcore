@@ -1,0 +1,3 @@
+EVK_iMX6UL_512MB
+board
+package
