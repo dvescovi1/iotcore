@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FeatureManifest
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"
+    >
+
+  <BasePackages>
+     <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPI4_RPI_4GB.SystemInformation.cab"/>
+     <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPI4_RPI_4GB.BootFirmware.cab"/>
+     <PackageFile Path="%BSPPKG_DIR%" Name="SV.PlatExtensions.UpdateOS.cab"/>
+  </BasePackages>
+
+  <OEMDevicePlatformPackages>
+    <PackageFile Device="RPI4_RPI_4GB" Path="%BSPPKG_DIR%" Name="RPI.RPI4_RPI_4GB.OEMDevicePlatform.cab"/>
+    <PackageFile Device="RPI4_RPI_4GB_Min2GB" Path="%BSPPKG_DIR%" Name="RPI.RPI4_RPI_4GB.OEMDevicePlatform_Min2GB.cab"/>
+  </OEMDevicePlatformPackages>
+
+  <DeviceLayoutPackages>
+    <PackageFile SOC="RPI" Path="%BSPPKG_DIR%" Name="RPI.RPI4_RPI_4GB.DeviceLayout.cab"/>
+    <PackageFile SOC="RPI_Min2GB" Path="%BSPPKG_DIR%" Name="RPI.RPI4_RPI_4GB.DeviceLayout_Min2GB.cab"/>
+  </DeviceLayoutPackages>
+
+  <Features>
+    <Microsoft/>
+    <MSFeatureGroups />
+    <OEM>
+      <PackageFile Path="%BSPPKG_DIR%" Name="IOT.Arm64.Crt.Runtime.cab">
+        <FeatureIDs>
+          <FeatureID>IOT_CRT140</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+    </OEM>
+    <OEMFeatureGroups />
+  </Features>
+</FeatureManifest>
