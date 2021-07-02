@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <OEMName>NXP</OEMName>
+    <OEMName>RPI</OEMName>
   </PropertyGroup>
   <PropertyGroup>
     <!-- Determine package output path depending if this is a build or dev machine -->

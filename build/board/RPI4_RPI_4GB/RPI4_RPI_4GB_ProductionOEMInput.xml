@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <OEMInput xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
-  <Description>Windows 10 IoT Core RPI4_RPI_4GB Test FFU generation.</Description>
+  <Description>Windows 10 IoT Core Production FFU generation with RPI BSP.</Description>
   <SOC>BCM2711</SOC>
   <SV>BROADCOM</SV>
   <Device>RPI4_RPI_4GB</Device>

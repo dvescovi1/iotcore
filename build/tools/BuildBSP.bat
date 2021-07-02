@@ -56,11 +56,11 @@ if "%SOC%"=="iMX6" (
     goto ARM32
 )
 
-if "%SOC%"=="iMX7" (
-    goto ARM32
+if "%SOC%"=="iMX8" (
+    goto ARM64
 )
 
-if "%SOC%"=="iMX8" (
+if "%SOC%"=="BCM2711" (
     goto ARM64
 )
 
