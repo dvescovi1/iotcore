@@ -121,6 +121,11 @@ copy %BUILD_ROOT%\imxusdhc\* %PKG_ROOT%\USDHC\ >NUL
 if errorlevel 1 (set FAILURE=imxusdhc & goto ERROR)
 copy %REPO_ROOT%\driver\sd\imxusdhc\imxusdhc.wm.xml %PKG_ROOT%\USDHC\ >NUL
 
+mkdir %PKG_ROOT%\GPIO >NUL 2>NUL
+copy %BUILD_ROOT%\bcmgpio\* %PKG_ROOT%\GPIO\ >NUL
+if errorlevel 1 (set FAILURE=bcmgpio & goto ERROR)
+copy %REPO_ROOT%\driver\gpio\bcmgpio\bcmgpio.wm.xml %PKG_ROOT%\GPIO\ >NUL
+
 :: Copy Components
 echo Copying components to %PKG_ROOT%
 mkdir %PKG_ROOT%\Arm64CrtRuntime >NUL 2>NUL

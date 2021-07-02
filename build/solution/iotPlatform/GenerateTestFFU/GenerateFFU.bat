@@ -7,7 +7,7 @@ call ..\..\..\tools\SetupBuildEnv.bat
 
 if "%PLATFORM%"=="ARM" (
 
-    REM i.MX6 Platforms
+    REM ARM32 based Platforms
 
     cd /d %BATCH_HOME%
     echo "Building EVK_iMX6UL_512MB FFU"
@@ -16,9 +16,13 @@ if "%PLATFORM%"=="ARM" (
 
 if "%PLATFORM%"=="ARM64" (
 
-    REM i.MX8M Platforms
+    REM ARM64 based Platforms
+
+    REM cd /d %BATCH_HOME%
+    REM echo "Building NXPEVK_iMX8M_4GB FFU"
+    REM call BuildImage NXPEVK_iMX8M_4GB NXPEVK_iMX8M_4GB_TestOEMInput.xml
 
     cd /d %BATCH_HOME%
-    echo "Building NXPEVK_iMX8M_4GB FFU"
-    call BuildImage NXPEVK_iMX8M_4GB NXPEVK_iMX8M_4GB_TestOEMInput.xml
+    echo "Building RPI4_RPI_4GB FFU"
+    call BuildImage RPI4_RPI_4GB RPI4_RPI_4GB_TestOEMInput.xml
 )
