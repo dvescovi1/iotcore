@@ -6,10 +6,11 @@
     >
 
   <BasePackages>
-     <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPI4_RPI_4GB.SystemInformation.cab"/>
-     <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPI4_RPI_4GB.BootFirmware.cab"/>
-     <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPi.bcmgpio.cab"/>
-     <PackageFile Path="%BSPPKG_DIR%" Name="SV.PlatExtensions.UpdateOS.cab"/>
+    <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPI4_RPI_4GB.SystemInformation.cab"/>
+    <!-->PackageFile Path="%BSPPKG_DIR%" Name="$(OEMNAME).RPI4_RPI_4GB.BootFirmware.cab"/-->
+    <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPI4.BootFirmware.cab"/>
+    <PackageFile Path="%BSPPKG_DIR%" Name="SV.PlatExtensions.UpdateOS.cab"/>
+    <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPI.bcmgpio.cab"/>
   </BasePackages>
 
   <OEMDevicePlatformPackages>

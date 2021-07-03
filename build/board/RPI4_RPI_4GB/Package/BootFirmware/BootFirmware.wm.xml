@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<identity
-    xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    name="BootFirmware"
-    namespace="RPI4RPI4GB"
-    owner="RPI"
-    legacyName="RPI.RPI4_RPI_4GB.BootFirmware"
-    >
-    <onecorePackageInfo targetPartition="EFIESP"/>
+<identity xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="BootFirmware" namespace="RPI4" owner="$(OEMNAME)" legacyName="$(OEMNAME).RPI4.BootFirmware"
+    xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00">
+  <onecorePackageInfo targetPartition="EFIESP" releaseType="Production" ownerType="OEM" />
   <files>
     <file destinationDir="$(runtime.bootDrive)" source="bootcode.bin" />
     <file destinationDir="$(runtime.bootDrive)" source="config.txt" />
