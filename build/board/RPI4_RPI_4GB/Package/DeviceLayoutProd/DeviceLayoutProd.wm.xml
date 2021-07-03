@@ -4,9 +4,9 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     name="DeviceLayout"
-    namespace="RPI4RPI4GB"
-    owner="RPI"
-    legacyName="RPI.RPI4_RPI_4GB.DeviceLayout"
+    namespace="RPI4"
+    owner="$(OEMNAME)"
+    legacyName="$(OEMNAME).RPI4.DeviceLayout"
     >
     <files>
         <file

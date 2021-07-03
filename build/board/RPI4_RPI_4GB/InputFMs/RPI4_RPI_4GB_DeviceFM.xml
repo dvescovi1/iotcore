@@ -14,13 +14,13 @@
   </BasePackages>
 
   <OEMDevicePlatformPackages>
-    <PackageFile Device="RPI4_RPI_4GB" Path="%BSPPKG_DIR%" Name="RPI.RPI4_RPI_4GB.OEMDevicePlatform.cab"/>
-    <PackageFile Device="RPI4_RPI_4GB_Min2GB" Path="%BSPPKG_DIR%" Name="RPI.RPI4_RPI_4GB.OEMDevicePlatform_Min2GB.cab"/>
+    <PackageFile Device="RPI4_RPI_4GB" Path="%BSPPKG_DIR%" Name="RPI.RPI4.OEMDevicePlatform.cab"/>
+    <PackageFile Device="RPI4_RPI_4GB_Min2GB" Path="%BSPPKG_DIR%" Name="RPI.RPI4.OEMDevicePlatform_Min2GB.cab"/>
   </OEMDevicePlatformPackages>
 
   <DeviceLayoutPackages>
-    <PackageFile SOC="BCM2711" Path="%BSPPKG_DIR%" Name="RPI.RPI4_RPI_4GB.DeviceLayout.cab"/>
-    <PackageFile SOC="BCM2711_Min2GB" Path="%BSPPKG_DIR%" Name="RPI.RPI4_RPI_4GB.DeviceLayout_Min2GB.cab"/>
+    <PackageFile SOC="BCM2711" Path="%BSPPKG_DIR%" Name="RPI.RPI4.DeviceLayout.cab"/>
+    <PackageFile SOC="BCM2711_Min2GB" Path="%BSPPKG_DIR%" Name="RPI.RPI4.DeviceLayout_Min2GB.cab"/>
   </DeviceLayoutPackages>
 
   <Features>
