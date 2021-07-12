@@ -3,7 +3,7 @@
   <Description>Windows 10 IoT Core Production FFU generation with RPI BSP.</Description>
   <SOC>BCM2711</SOC>
   <SV>BROADCOM</SV>
-  <Device>RPI4_RPI_4GB</Device>
+  <Device>RPI4_RPI64_4GB</Device>
   <ReleaseType>Test</ReleaseType>
   <BuildType>fre</BuildType>
   <SupportedLanguages>
@@ -24,7 +24,7 @@
   </Resolutions>
   <AdditionalFMs>
     <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
-    <AdditionalFM>%BLD_DIR%\MergedFMs\RPI4_RPI_4GB_DeviceFM.xml</AdditionalFM>
+    <AdditionalFM>%BLD_DIR%\MergedFMs\RPI4_RPI64_4GB_DeviceFM.xml</AdditionalFM>
   </AdditionalFMs>
 <Features>
 <Microsoft>

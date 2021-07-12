@@ -96,7 +96,7 @@
       set OutDir=$(OutDir)
       set OEMName=$(OEMName)
       call ..\..\..\tools\BuildBSP.bat iMX8 NXPEVK_iMX8M_4GB
-      call ..\..\..\tools\BuildBSP.bat RPI RPI4_RPI_4GB
+      call ..\..\..\tools\BuildBSP.bat RPI RPI4_RPI64_4GB
     </NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>
       set Configuration=$(Configuration)
@@ -105,7 +105,7 @@
       set OutDir=$(OutDir)
       set OEMName=$(OEMName)
       call ..\..\..\tools\BuildBSP.bat iMX8 NXPEVK_iMX8M_4GB
-      call ..\..\..\tools\BuildBSP.bat RPI RPI4_RPI_4GB
+      call ..\..\..\tools\BuildBSP.bat RPI RPI4_RPI64_4GB
     </NMakeReBuildCommandLine>
     <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeCleanCommandLine>

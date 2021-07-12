@@ -6,7 +6,7 @@
     name="BootLoader"
     namespace="RPI4RPI4GB"
     owner="RPI"
-    legacyName="RPI.RPI4_RPI_4GB.BootLoader"
+    legacyName="RPI.RPI4_RPI64_4GB.BootLoader"
     >
     <onecorePackageInfo targetPartition="BOOTLOADER" binaryPartition="true">
         <binaryPartition imageSource="BootLoader\firmware_fit.merged" />
