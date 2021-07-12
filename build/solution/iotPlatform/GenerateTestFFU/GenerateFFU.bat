@@ -9,9 +9,13 @@ if "%PLATFORM%"=="ARM" (
 
     REM ARM32 based Platforms
 
+    REM cd /d %BATCH_HOME%
+    REM echo "Building EVK_iMX6UL_512MB FFU"
+    REM call BuildImage EVK_iMX6UL_512MB EVK_iMX6UL_512MB_TestOEMInput.xml
+
     cd /d %BATCH_HOME%
-    echo "Building EVK_iMX6UL_512MB FFU"
-    call BuildImage EVK_iMX6UL_512MB EVK_iMX6UL_512MB_TestOEMInput.xml
+    echo "Building RPI3_RPI32 FFU"
+    call BuildImage RPI3_RPI32 RPI3_RPI32_TestOEMInput.xml
 )
 
 if "%PLATFORM%"=="ARM64" (

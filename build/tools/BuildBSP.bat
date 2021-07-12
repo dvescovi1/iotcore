@@ -56,6 +56,10 @@ if "%SOC%"=="iMX6" (
     goto ARM32
 )
 
+if "%SOC%"=="BCM2836" (
+    goto ARM32
+)
+
 if "%SOC%"=="iMX8" (
     goto ARM64
 )
