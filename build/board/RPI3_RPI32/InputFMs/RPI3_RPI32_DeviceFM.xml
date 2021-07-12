@@ -7,7 +7,6 @@
 
   <BasePackages>
      <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPI3.SystemInformation.cab"/>
-     <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPI3.BootLoader.cab"/>
      <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPI3.BootFirmware.cab"/>
     <!-->PackageFile Path="%BSPPKG_DIR%" Name="NXP.iMX.imxusdhc.cab"/-->
      <PackageFile Path="%BSPPKG_DIR%" Name="SV.PlatExtensions.UpdateOS.cab"/>

@@ -71,11 +71,6 @@
     </Pkggen>
   </ItemGroup>
   <ItemGroup>
-    <Pkggen Include="BootLoader\BootLoader.wm.xml">
-      <AdditionalOptions>/universalbsp</AdditionalOptions>
-    </Pkggen>
-  </ItemGroup>
-  <ItemGroup>
     <Pkggen Include="BootFirmware\BootFirmware.wm.xml">
       <AdditionalOptions>/universalbsp</AdditionalOptions>
     </Pkggen>
