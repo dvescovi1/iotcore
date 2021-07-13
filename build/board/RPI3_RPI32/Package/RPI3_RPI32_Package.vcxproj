@@ -81,7 +81,17 @@
     </Pkggen>
   </ItemGroup>
   <ItemGroup>
+    <Pkggen Include="DeviceLayoutProd-R\DeviceLayoutProd-R.wm.xml">
+      <AdditionalOptions>/universalbsp</AdditionalOptions>
+    </Pkggen>
+  </ItemGroup>
+  <ItemGroup>
     <Pkggen Include="OEMDevicePlatform\OEMDevicePlatform.wm.xml">
+      <AdditionalOptions>/universalbsp</AdditionalOptions>
+    </Pkggen>
+  </ItemGroup>
+  <ItemGroup>
+    <Pkggen Include="OEMDevicePlatform-R\OEMDevicePlatform-R.wm.xml">
       <AdditionalOptions>/universalbsp</AdditionalOptions>
     </Pkggen>
   </ItemGroup>
