@@ -53,7 +53,7 @@
   <Feature>IOT_NANORDPSERVER</Feature>
 </Microsoft>
 <OEM>
-  <!--Feature>IMX_DRIVERS</Feature-->
+  <Feature>RPI3_DRIVERS</Feature>
 </OEM>
 </Features>
   <PackageFiles />

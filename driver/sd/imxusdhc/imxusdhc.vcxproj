@@ -166,7 +166,6 @@
       <WppScanConfigurationData>trace.hpp</WppScanConfigurationData>
     </ClCompile>
     <ClCompile Include="devpropslist.cpp" />
-    <ResourceCompile Include="@(RcSourceFiles)" Exclude="@(ResourceCompile)" />
     <Midl Include="@(IdlSourceFiles)" Exclude="@(Midl)" />
     <MessageCompile Include="@(McSourceFiles)" Exclude="@(MessageCompile)" />
     <MASM Include="@(AsmSourceFiles)" Exclude="@(MASM)" />

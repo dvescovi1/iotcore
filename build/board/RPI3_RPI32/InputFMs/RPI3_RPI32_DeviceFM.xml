@@ -6,10 +6,12 @@
     >
 
   <BasePackages>
-     <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPI3.SystemInformation.cab"/>
-     <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPI3.BootFirmware.cab"/>
-    <!-->PackageFile Path="%BSPPKG_DIR%" Name="NXP.iMX.imxusdhc.cab"/-->
-     <PackageFile Path="%BSPPKG_DIR%" Name="SV.PlatExtensions.UpdateOS.cab"/>
+    <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPI3.SystemInformation.cab"/>
+    <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPI3.BootFirmware.cab"/>
+    <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPi.rpisdhc.cab"/>
+    <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPi.rpisdhc.cab"/>
+    <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPi.rpisdhc.cab"/>
+    <PackageFile Path="%BSPPKG_DIR%" Name="SV.PlatExtensions.UpdateOS.cab"/>
   </BasePackages>
 
   <OEMDevicePlatformPackages>
@@ -24,6 +26,11 @@
     <Microsoft />
     <MSFeatureGroups />
     <OEM>
+      <!--PackageFile Path="%BSPPKG_DIR%" Name="NXP.iMX.imxgpio.cab">
+        <FeatureIDs>
+          <FeatureID>IMX_DRIVERS</FeatureID>
+        </FeatureIDs>
+      </PackageFile-->
     </OEM>
     <OEMFeatureGroups />
   </Features>

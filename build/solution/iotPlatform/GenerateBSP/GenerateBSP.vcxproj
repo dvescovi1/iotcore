@@ -73,15 +73,14 @@
       set PkgOutput=$(PkgOutput)
       set OutDir=$(OutDir)
       set OEMName=$(OEMName)
-      call ..\..\..\tools\BuildBSP.bat iMX6 EVK_iMX6UL_512MB</NMakeBuildCommandLine>
+      call ..\..\..\tools\BuildBSP.bat BCM2836 RPI3_RPI32</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>
       set Configuration=$(Configuration)
       set Platform=$(Platform)
       set PkgOutput=$(PkgOutput)
       set OutDir=$(OutDir)
       set OEMName=$(OEMName)
-      call ..\..\..\tools\BuildBSP.bat iMX6 EVK_iMX6UL_512MB
-</NMakeReBuildCommandLine>
+      call ..\..\..\tools\BuildBSP.bat BCM2836 RPI3_RPI32</NMakeReBuildCommandLine>
     <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeCleanCommandLine>
       del /S /F /Q ..\..\..\..\BSP

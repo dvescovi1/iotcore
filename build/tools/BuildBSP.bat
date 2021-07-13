@@ -52,10 +52,6 @@ copy build\board\%BOARDNAME%\%BOARDNAME%_ProductionOEMInput.xml %BSP_ROOT%\OEMIn
 copy build\board\%BOARDNAME%\%BOARDNAME%_FMFileList.xml %BSP_ROOT%\Packages\%BOARDNAME%FMFileList.xml >NUL
 copy build\board\%BOARDNAME%\InputFMs\%BOARDNAME%_DeviceFM.xml %BSP_ROOT%\Packages >NUL
 
-if "%SOC%"=="iMX6" (
-    goto ARM32
-)
-
 if "%SOC%"=="BCM2836" (
     goto ARM32
 )
@@ -82,13 +78,9 @@ copy %REPO_ROOT%\driver\sd\imxusdhc\imxusdhc.wm.xml %PKG_ROOT%\USDHC\ >NUL
 
 :: Copy Firmware Packages
 echo Copying Firmware Packages to %PKG_ROOT%
-mkdir %PKG_ROOT%\BootFirmware\BootFirmware >NUL 2>NUL
-copy %INFO_ROOT%\BootFirmware\BootFirmware.wm.xml %PKG_ROOT%\BootFirmware\ >NUL
-copy %INFO_ROOT%\BootFirmware\uefi.fit %PKG_ROOT%\BootFirmware\BootFirmware\ >NUL
-
-mkdir %PKG_ROOT%\BootLoader\BootLoader >NUL 2>NUL
-copy %INFO_ROOT%\BootLoader\BootLoader.wm.xml %PKG_ROOT%\BootLoader\ >NUL
-copy %INFO_ROOT%\BootLoader\firmware_fit.merged %PKG_ROOT%\BootLoader\BootLoader\ >NUL
+mkdir %PKG_ROOT%\BootFirmware\ >NUL 2>NUL
+:: copy %INFO_ROOT%\BootFirmware\BootFirmware.wm.xml %PKG_ROOT%\BootFirmware\ >NUL
+copy %INFO_ROOT%\BootFirmware\* %PKG_ROOT%\BootFirmware\ >NUL
 
 :: Copy the UpdateOS Package XML
 mkdir %PKG_ROOT%\SVPlatExtensions >NUL 2>NUL
