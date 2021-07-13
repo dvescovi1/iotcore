@@ -11,7 +11,7 @@
     <files>
         <file
             destinationDir="$(runtime.windows)\ImageUpdate"
-            source="OEMDevicePlatform-R\DevicePlatform-R.xml"
+            source="OEMDevicePlatform-R\DevicePlatform.xml"
             name="OEMDevicePlatform.xml" />
     </files>
 </identity>

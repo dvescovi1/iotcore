@@ -11,7 +11,7 @@
     <files>
         <file
             destinationDir="$(runtime.windows)\ImageUpdate"
-            source="DeviceLayoutProd-R\devicelayoutprod-R.xml"
+            source="DeviceLayoutProd-R\devicelayoutprod.xml"
             name="DeviceLayout.xml" />
     </files>
 </identity>

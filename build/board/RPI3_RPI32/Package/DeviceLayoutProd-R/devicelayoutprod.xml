@@ -54,4 +54,3 @@
   <DefaultPartitionByteAlignment>0x200000</DefaultPartitionByteAlignment>
   <VersionTag>IoTUAP</VersionTag>
 </DeviceLayout>
-</DeviceLayout>
