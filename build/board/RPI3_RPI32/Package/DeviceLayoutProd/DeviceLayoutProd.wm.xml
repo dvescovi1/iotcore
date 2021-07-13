@@ -6,7 +6,7 @@
     name="DeviceLayout"
     namespace="RPI3"
     owner="$(OEMNAME)"
-    legacyName="$(OEMNAME).RPI3.DeviceLayout"
+    legacyName="$(OEMNAME).RPI3_RPI32.DeviceLayout"
     >
     <files>
         <file

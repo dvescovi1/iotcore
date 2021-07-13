@@ -6,7 +6,7 @@
     name="OEMDevicePlatform"
     namespace="RPI3"
     owner="$(OEMNAME)"
-    legacyName="$(OEMNAME).RPI3.OEMDevicePlatform"
+    legacyName="$(OEMNAME).RPI3_RPI32.OEMDevicePlatform"
     >
     <files>
         <file

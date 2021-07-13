@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DeviceLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
-  <Partitions>
 
-    <!-- BootLoader starting offset is set in OffsetInSectors which is set as 2-->
-    <Partition>
-      <Name>BOOTLOADER</Name>
-      <TotalSectors>4096</TotalSectors>
-      <Type>0x4d</Type>
-      <OffsetInSectors>2</OffsetInSectors>
-    </Partition>
+  <!-- Master Boot Record -->
+
+  <Partitions>
 
     <!-- EFI -->
 
     <Partition>
       <Name>EFIESP</Name>
       <FileSystem>FAT</FileSystem>
-      <TotalSectors>131072</TotalSectors>
+      <TotalSectors>65536</TotalSectors>
       <Type>0x0c</Type>
       <Bootable>true</Bootable>
       <RequiredToFlash>true</RequiredToFlash>
@@ -32,16 +27,7 @@
       <FileSystem>NTFS</FileSystem>
     </Partition>
 
-   <!-- Crash Dump -->
-
-    <Partition>
-      <Name>CrashDump</Name>
-      <Type>0x0C</Type>
-      <TotalSectors>1228800</TotalSectors>
-      <FileSystem>FAT32</FileSystem>
-    </Partition>
-
-    <!-- Used by package that requires Data Partition  -->
+    <!-- Data Partition  -->
 
     <Partition>
       <Name>Data</Name>
