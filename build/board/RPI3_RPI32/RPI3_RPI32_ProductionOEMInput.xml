@@ -2,10 +2,10 @@
 <OEMInput xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
   <Description>Windows 10 IoT Core RPI3_RPI32 Test FFU generation.</Description>
   <!--SOC>BCM2836</SOC-->
-  <SOC>RPI3_RPI32-R</SOC>
+  <SOC>BCM2836-R</SOC>
   <SV>BROADCOM</SV>
-  <!-->Device>RPI3_RPI32</Device-->
-  <Device>RPI3_RPI32</Device>
+  <!--Device>RPI3_RPI32</Device-->
+  <Device>RPI3_RPI32-R</Device>
   <ReleaseType>Test</ReleaseType>
   <BuildType>fre</BuildType>
   <SupportedLanguages>

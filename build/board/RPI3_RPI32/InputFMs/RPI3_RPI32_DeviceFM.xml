@@ -15,23 +15,17 @@
   </BasePackages>
 
   <OEMDevicePlatformPackages>
-    <PackageFile Device="RPI3_RPI32" Path="%BSPPKG_DIR%" Name="RPI.RPI3_RPI32.OEMDevicePlatform.cab"/>
-    <PackageFile Device="RPI3_RPI32-R" Path="%BSPPKG_DIR%" Name="RPI.RPI3_RPI32.OEMDevicePlatform-R.cab"/>
     <!-- MBR 4GB layout  -->
-    <!--PackageFile Device="RPI3_RPI32" Path="%PKGBLD_DIR%" Name="%OEM_NAME%.DeviceLayout.MBR4GB.cab"/-->
-    <!-- MBR 8GB layout - select this by specifying the SOC field in the OEMInput xml file -->
-    <!--PackageFile Device="RPI3_RPI32-R" Path="%PKGBLD_DIR%" Name="%OEM_NAME%.DeviceLayout.MBR8GB-R.cab"/-->
+    <PackageFile Device="RPI3_RPI32" Path="%BSPPKG_DIR%" Name="RPI.RPI3_RPI32.OEMDevicePlatform.cab"/>
+    <!-- MBR 8GB layout - select this by specifying the Device field in the OEMInput xml file -->
+    <PackageFile Device="RPI3_RPI32-R" Path="%BSPPKG_DIR%" Name="RPI.RPI3_RPI32.OEMDevicePlatform-R.cab"/>
   </OEMDevicePlatformPackages>
 
   <DeviceLayoutPackages>
-    <!--PackageFile SOC="BCM2836" Path="%BSPPKG_DIR%" Name="RPI.RPI3_RPI32.DeviceLayout.cab"/-->
-    <!--PackageFile SOC="BCM2836-R" Path="%BSPPKG_DIR%" Name="RPI.RPI3_RPI32.DeviceLayout-R.cab"/-->
-    <PackageFile SOC="RPI3_RPI32" Path="%BSPPKG_DIR%" Name="RPI.RPI3_RPI32.DeviceLayout.cab"/>
-    <PackageFile SOC="RPI3_RPI32-R" Path="%BSPPKG_DIR%" Name="RPI.RPI3_RPI32.DeviceLayout-R.cab"/>
     <!-- MBR 4GB layout  -->
-    <!--PackageFile SOC="BCM2836" Path="%PKGBLD_DIR%" Name="%OEM_NAME%.DeviceLayout.MBR4GB.cab"/-->
+    <PackageFile SOC="BCM2836" Path="%BSPPKG_DIR%" Name="RPI.RPI3_RPI32.DeviceLayout.cab"/>
     <!-- MBR 8GB layout - select this by specifying the SOC field in the OEMInput xml file -->
-    <!--PackageFile SOC="BCM2836-R" Path="%PKGBLD_DIR%" Name="%OEM_NAME%.DeviceLayout.MBR8GB-R.cab"/-->
+    <PackageFile SOC="BCM2836-R" Path="%BSPPKG_DIR%" Name="RPI.RPI3_RPI32.DeviceLayout-R.cab"/>
   </DeviceLayoutPackages>
 
   <Features>
