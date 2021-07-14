@@ -27,6 +27,10 @@ if "%PLATFORM%"=="ARM64" (
     REM call BuildImage NXPEVK_iMX8M_4GB NXPEVK_iMX8M_4GB_TestOEMInput.xml
 
     cd /d %BATCH_HOME%
-    echo "Building RPI4_RPI64_4GB FFU"
-    call BuildImage RPI4_RPI64_4GB RPI4_RPI64_4GB_TestOEMInput.xml
+    echo "Building RPI3_RPI64 FFU"
+    call BuildImage RPI3_RPI64 RPI3_RPI64_TestOEMInput.xml
+
+    REM cd /d %BATCH_HOME%
+    REM echo "Building RPI4_RPI64_4GB FFU"
+    REM call BuildImage RPI4_RPI64_4GB RPI4_RPI64_4GB_TestOEMInput.xml
 )

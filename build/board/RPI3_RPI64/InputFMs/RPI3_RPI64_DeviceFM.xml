@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FeatureManifest
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"
+    >
+
+  <BasePackages>
+    <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPI3.SystemInformation.cab"/>
+    <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPI3.BootFirmware.cab"/>
+    <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPi.rpisdhc.cab"/>
+    <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPi.rpisdhc.cab"/>
+    <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPi.rpisdhc.cab"/>
+    <PackageFile Path="%BSPPKG_DIR%" Name="SV.PlatExtensions.UpdateOS.cab"/>
+  </BasePackages>
+
+  <OEMDevicePlatformPackages>
+    <!-- MBR 4GB layout  -->
+    <PackageFile Device="RPI3_RPI64" Path="%BSPPKG_DIR%" Name="RPI.RPI3_RPI64.OEMDevicePlatform.cab"/>
+    <!-- MBR 8GB layout - select this by specifying the Device field in the OEMInput xml file -->
+    <PackageFile Device="RPI3_RPI64-R" Path="%BSPPKG_DIR%" Name="RPI.RPI3_RPI64.OEMDevicePlatform-R.cab"/>
+  </OEMDevicePlatformPackages>
+
+  <DeviceLayoutPackages>
+    <!-- MBR 4GB layout  -->
+    <PackageFile SOC="BCM2836" Path="%BSPPKG_DIR%" Name="RPI.RPI3_RPI64.DeviceLayout.cab"/>
+    <!-- MBR 8GB layout - select this by specifying the SOC field in the OEMInput xml file -->
+    <PackageFile SOC="BCM2836-R" Path="%BSPPKG_DIR%" Name="RPI.RPI3_RPI64.DeviceLayout-R.cab"/>
+  </DeviceLayoutPackages>
+
+  <Features>
+    <Microsoft />
+    <MSFeatureGroups />
+    <OEM>
+      <PackageFile Path="%BSPPKG_DIR%" Name="IOT.Arm64.Crt.Runtime.cab">
+        <FeatureIDs>
+          <FeatureID>IOT_CRT140</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <!--PackageFile Path="%BSPPKG_DIR%" Name="NXP.iMX.imxgpio.cab">
+        <FeatureIDs>
+          <FeatureID>IMX_DRIVERS</FeatureID>
+        </FeatureIDs>
+      </PackageFile-->
+    </OEM>
+    <OEMFeatureGroups />
+  </Features>
+</FeatureManifest>
