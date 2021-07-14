@@ -68,6 +68,11 @@ if "%SolutionDir%"=="" (
     SET SolutionDir=%BOARD_BUILD_PATH%\
 	echo SolutionDir=%SolutionDir%
 )
+
+REM
+set MSPKG_DIR=%KITSROOT%MSPackages\retail\%PLATFORM%\fre\
+echo Setting MSPKG_DIR to %MSPKG_DIR%
+
 REM
 echo Export packages to one directory
 REM

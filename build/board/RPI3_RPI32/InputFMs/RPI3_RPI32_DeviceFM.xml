@@ -12,6 +12,8 @@
     <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPi.rpisdhc.cab"/>
     <PackageFile Path="%BSPPKG_DIR%" Name="RPI.RPi.rpisdhc.cab"/>
     <PackageFile Path="%BSPPKG_DIR%" Name="SV.PlatExtensions.UpdateOS.cab"/>
+    <PackageFile Path="%MSPKG_DIR%" Name="RASPBERRYPI.RPi2.dwcUsbOtg.cab"/>
+    <PackageFile Path="%MSPKG_DIR%" Name="RASPBERRYPI.RPi.LAN9500N650F.cab"/>
   </BasePackages>
 
   <OEMDevicePlatformPackages>
@@ -32,11 +34,23 @@
     <Microsoft />
     <MSFeatureGroups />
     <OEM>
-      <!--PackageFile Path="%BSPPKG_DIR%" Name="NXP.iMX.imxgpio.cab">
+      <PackageFile Path="%MSPKG_DIR%" Name="RASPBERRYPI.RPi.FT5406.Touch.cab">
         <FeatureIDs>
-          <FeatureID>IMX_DRIVERS</FeatureID>
+          <FeatureID>RPI3_DRIVERS</FeatureID>
         </FeatureIDs>
-      </PackageFile-->
+      </PackageFile>
+      <PackageFile Path="%MSPKG_DIR%" Name="RASPBERRYPI.RPi.Wifi.bcmdhd63.cab">
+        <FeatureIDs>
+          <FeatureID>RPI_WIFI_DRIVER</FeatureID>
+          <FeatureID>RPI3_DRIVERS</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%MSPKG_DIR%" Name="RASPBERRYPI.RPi.BtwSerialH5Bus.cab">
+        <FeatureIDs>
+          <FeatureID>RPI_BTWSERIALH5BUS_DRIVER</FeatureID>
+          <FeatureID>RPI3_DRIVERS</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
     </OEM>
     <OEMFeatureGroups />
   </Features>
