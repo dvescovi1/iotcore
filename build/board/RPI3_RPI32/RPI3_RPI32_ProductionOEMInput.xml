@@ -55,6 +55,7 @@
   <Feature>IOT_NANORDPSERVER</Feature>
 </Microsoft>
 <OEM>
+  <Feature>RPI2_DRIVERS</Feature>
   <Feature>RPI3_DRIVERS</Feature>
 </OEM>
 </Features>
